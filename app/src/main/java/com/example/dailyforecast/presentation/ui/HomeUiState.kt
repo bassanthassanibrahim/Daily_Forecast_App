@@ -1,0 +1,27 @@
+package com.example.dailyforecast.presentation.ui
+
+data class HomeUiState(
+    val isLoading: Boolean = false,
+    val isError: Boolean = false,
+    val showSnackBar: Boolean = false,
+    val weatherItems: List<WeatherItemUiState> = emptyList(),
+    val cities: List<CityUiState> = emptyList(),
+    val selectedCity: String = "",
+    val selectedCityLat: Double = 0.0,
+    val selectedCityLong: Double = 0.0
+)
+data class CityUiState(
+    val id: Int = 0,
+    val cityNameAr: String = "",
+    val cityNameEn: String = "",
+    val lat: Double = 0.0,
+    val lon: Double = 0.0
+)
+data class WeatherItemUiState(
+    val city: String = "",
+    val weatherDescription: String = "",
+    val temperature: String = "",
+    val weatherIcon: String = "",
+    val day: String = "",
+    val windSpeed: String = ""
+)

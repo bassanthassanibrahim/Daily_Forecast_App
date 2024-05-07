@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Daily Forecast</string>
+    <string name="couldn_t_fetch_data">Couldn\'t fetch data</string>
+    <string name="retry">Retry</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="today">Today</string>
+    <string name="it_s_not_accurate_data">it\'s not accurate data</string>
+</resources>
